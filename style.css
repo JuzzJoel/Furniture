@@ -1,0 +1,55 @@
+:root{
+    --primary-color:#054c73;
+    --secondary-color:#e5e5e5;
+    --font-pri-hue:#333;
+    --font-sec-hue:#666;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    width:80vw;
+    background: #000;
+    margin: 0 auto;
+    height: 120px;
+    align-items: center;
+
+}
+
+.logo{
+    width: 50%;
+    font-size: 34px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    font-size: 14px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+a{
+    text-decoration: none;
+}
