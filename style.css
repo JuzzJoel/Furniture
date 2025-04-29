@@ -1,33 +1,33 @@
-:root{
-    --primary-color:#054c73;
-    --secondary-color:#e5e5e5;
-    --font-pri-hue:#333;
-    --font-sec-hue:#666;
+:root {
+    --primary-color: #054c73;
+    --secondary-color: #e5e5e5;
+    --font-pri-hue: #333;
+    --font-sec-hue: #666;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: auto;
     font-family: "Montserrat", sans-serif;
 }
 
-header{
+header {
     display: flex;
-    width:80vw;
-    background: #000;
+    width: 80vw;
     margin: 0 auto;
     height: 120px;
     align-items: center;
+    background: #fff;
 
 }
 
-.logo{
+.logo {
     width: 50%;
     font-size: 34px;
     color: var(--primary-color);
@@ -35,21 +35,672 @@ header{
     text-transform: capitalize;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
+nav {
     width: 50%;
-    font-size: 14px;
+
 }
 
-ul{
+ul {
+    font-size: 14px;
     display: flex;
     justify-content: space-around;
-
-
-
 }
 
-a{
+a {
     text-decoration: none;
+    color: var(--font-pri-hue);
+
 }
+
+.hero {
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.hero-container {
+    background: url(assets/images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 1000px;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #DFE9F4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(100%, 60%);
+}
+
+.hero-content-text {
+    width: 87%;
+    height: 82.5%;
+    margin: 0 auto;
+}
+
+.hero-content-text-top {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--font-pri-hue);
+    margin-bottom: 5px;
+}
+
+.hero-content-text-middle {
+    font-size: 92px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.hero-content-text-bottom {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.2;
+    color: var(--font-pri-hue);
+
+}
+
+.hero-button {
+    border-radius: 50px;
+    width: 41%;
+    padding: 25px 72px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #fff;
+    background: var(--primary-color);
+    font-size: 16px;
+    border: none;
+    min-width: -webkit-fill-available;
+    min-width: fit-content;
+
+}
+
+.benefits {
+    height: 20vh;
+    width: 100vw;
+    background: #F2F5FF;
+    display: flex;
+    
+}
+
+.benefits-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.benefits-container-content {
+    height: 55px;
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.benefits-container .benefits-container-content .benefits-container-content-title {
+    color: var(--font-pri-hue);
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-container .benefits-container-content .benefits-container-content-title-sup {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.benefits-container .benefits-container-content.benefits-container-content-title-sub {
+    font-size: 16px;
+}
+
+
+
+.benefits-container-content-figurine {
+    width: 80px;
+    height: 50px;
+}
+
+.benefits-container .benefits-container-content:nth-child(1) .benefits-container-content-figurine {
+    background: url(assets/images/Group-1.svg);
+    background-size: 20px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.benefits-container .benefits-container-content:nth-child(2) .benefits-container-content-figurine {
+    background: url(assets/images/Group.svg);
+    background-size: 20px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.benefits-container .benefits-container-content:nth-child(3) .benefits-container-content-figurine {
+    background: url(assets/images/shield-1\ 1.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.inspiration {
+    width: 100%;
+    height: 90vh;
+    margin: 50px 0;
+}
+
+.inspiration-body-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.inspiration-heading {
+    height: 100px;
+}
+
+.inspiration-header {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.inspiration-sub-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.inspiration-content-container {
+width: 100%;
+
+}
+
+.inspiration-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: end;
+}
+
+.inspiration-content {
+    height: 450px;
+    width: 30%;
+}
+
+.inspiration-content:nth-child(1) {
+    border-radius: 20% 0 0 0;
+    background: url(assets/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering\ 2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.inspiration-content:nth-child(2) {
+    align-self: start;
+    background: url(assets/images/scandinavian-interior-mockup-wall-decal-background\ 2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.inspiration-content:nth-child(3) {
+    border-radius: 0 0 20% 0;
+    background: #c4c4c4 url(assets/images/light-lamp-white-wall-1\ 1.png);
+    background-size: fill;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.beautify {
+    width: 100vw;
+    height: 880px;
+    background: #F2F5FF;
+}
+
+.beautify-container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.beautify-container-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beautify-container-content-box {
+    width: 50%;
+    height: 50%;
+
+}
+
+.beautify-container-content-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--font-pri-hue);
+
+}
+
+.beautify-container-content-text {
+    font-size: 20px;
+    line-height: 1.95;
+    color: var(--font-sec-hue);
+
+}
+
+.beautify-container-content-button {
+    color: #fff;
+    background: var(--primary-color);
+    text-transform: uppercase;
+    padding: 24px 54px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+}
+
+.beautify-container-image-container {
+    width: 50%;
+    height: 800px;
+    border: 1px solid black;
+}
+
+.beautify-container-image {
+    border-radius: 30% 5% 30% 5%;
+    height: 790px;
+    width: 500px;
+    background: url(assets/images/image\ 97.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.beautify-container-image-background {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    background: #09513B;
+    z-index: 1;
+    transform: translate(90%, -150%);
+
+}
+
+.browse {
+    width: 100%;
+    height: 100vh;
+    margin: 40px 0;
+
+    border-bottom: 1px solid var(--font-pri-hue);
+}
+
+.browse-body-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.browse-heading {
+    height: 100px;
+}
+
+.browse-header {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.browse-sub-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.browse-container {
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin: 0 auto;
+    align-items: end;
+    margin-top: 100px;
+}
+
+.browse-content-box {
+    height: 510px;
+    width: 35%;
+}
+
+.browse-content {
+    height: 510px;
+    width: 100%;
+    border-radius: 30px;
+   
+}
+
+
+.browse-content-box-text {
+    margin: 50px 0 0;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    height: 10px;
+    background: #fff;
+    text-transform: capitalize;
+    color: var(--font-pri-hue);
+}
+
+.browse-content-box-text {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: unset;
+    height: 10px;
+    background: #fff;
+    width: 100%;
+}
+
+
+.browse-container .browse-content-box:nth-child(1) .browse-content {
+    background: url(assets/images/image\ 106.png);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+}
+
+.browse-container .browse-content-box:nth-child(2) .browse-content {
+    background: url(assets/images/image\ 100.png);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.browse-container .browse-content-box:nth-child(3) .browse-content {
+    background: url(assets/images/image\ 101.png);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+}
+
+.browse-content-box-text {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    height: 10px;
+    background: #fff;
+}
+
+.works {
+    width: 100%;
+    height: 100vh;
+    margin: 100px 0;
+}
+.works-body-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.works-heading {
+    height: 100px;
+}
+
+.works-header {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.works-sub-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.works-container {
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin: 0 auto;
+    align-items: end;
+    margin-top: 100px;
+}
+
+.works-content-box {
+    height: 510px;
+    width: 35%;
+}
+
+.works-content {
+    height: 510px;
+    width: 100%;
+    border-radius: 30px;
+ 
+
+}
+
+.works-container .works-content-box:nth-child(1) .works-content {
+    background: url(assets/images/african-american-man-paying-with-credit-card-online-while-making-orders-via-mobile-internet-making-transaction-using-mobile-bank-application\ 1.png);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.works-container .works-content-box:nth-child(2) .works-content {
+    background: url(assets/images/image\ 87.png);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+}
+
+.works-container .works-content-box:nth-child(3) .works-content {
+    background: url(assets/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering\ 2.png);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+}
+
+.works-content-box-text-header {
+    margin: 50px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    height: 10px;
+    background: #fff;
+    text-transform: capitalize;
+    color: var(--font-pri-hue);
+}
+
+.works-content-box-text {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: unset;
+    height: 10px;
+    background: #fff;
+    width: 100%;
+    color: var(--font-sec-hue);
+}
+
+.footer {
+    margin-top: 100px;
+    width: 100vw;
+    height: auto;
+    position: sticky;
+    bottom: -100%;
+}
+
+.newsletter {
+    background: #f2f5ff;
+    height: 40vh;
+    padding: 100px;
+}
+
+.newsletter-content {
+    width: 100%;
+    text-align: center;
+}
+
+.newsletter-content-header {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.newsletter-content-text {
+    font-size: 20px;
+    line-height: 1.9;
+    color: var(--font-pri-hue);
+
+
+}
+
+.newsletter-input {
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.newsletter-input input {
+    border-radius: 3px 0 0 3px;
+    width: 68.5%;
+    float: left;
+    padding: 25px;
+    color: var(--font-pri-hue);
+    font-size: 16px;
+    border: 1px solid var(--primary-color);
+}
+
+.newsletter-input input::placeholder {
+    font-size: 16px;
+    color: var(--font-sec-hue);
+
+
+}
+
+.newsletter-input button {
+    width: 31.5%;
+    font-size: 16px;
+    color: #fff;
+    background: var(--primary-color);
+    float: left;
+    border: none;
+    padding: 25px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+
+
+
+}
+
+.shop {
+    width: 100vw;
+    height: 45vh;
+    background: var(--primary-color);
+}
+.shop-container{
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.shop-container-content{
+    width: 33%;
+    text-align: left;
+    color: #fff;
+}
+.shop-container-content-heading{
+}
+.shop-container-content-body{
+    margin: 20px 0 ;
+    line-height: 2.2;
+}
+.shop-container-content-sub-heading{
+
+}
+.shop-container-display{
+    width: 66%;
+}
+.shop-container-display-heading{
+    font-size: 24px;
+    font-weight: bold;
+color: #fff;
+margin-bottom: 10px;
+}
+.shop-container-display-span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 10px;
+
+}     
+.shop-container-display-span-image{
+ flex: 20%;
+ height: 250px ;
+ border-radius: 2px;
+}        
+.shop-container-display-span-image:nth-child(1){
+    background: url(assets/images/IG-1.jpg);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+}  
+.shop-container-display-span-image:nth-child(2){
+    background: url(assets/images/IG-2.jpg);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+
+
+}  
+.shop-container-display-span-image:nth-child(3){
+    background: url(assets/images/IG-3.jpg);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+
+}  
+.shop-container-display-span-image:nth-child(4){
+    background: url(assets/images/IG-4.jpg);
+     background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;
+
+
+}  
+
+https: //www.figma.com/design/k5H2aEwUuL63KccbnnPNdX/Furniture-Website--Community-?node-id=0-1&t=Ikxlj8JqxG94umWk-1
